@@ -1,0 +1,14 @@
+export const post = {
+  header: {
+    title: "Retention-first design",
+    subtitle: "Improving onboarding",
+  },
+  image: {
+    src: "/image.png",
+    alt: "Flow",
+  },
+  sections: [
+    { title: "Problem", body: "Users dropped off." },
+    { title: "Solution", body: "We simplified onboarding." },
+  ],
+};

@@ -1,0 +1,93 @@
+.prose {
+  max-width: 624px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.title {
+  font: var(--title-4);
+  color: var(--foreground);
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font: var(--text-large);
+  letter-spacing: var(--text-large-letter-spacing);
+  color: var(--foreground);
+}
+
+.imageWrap {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.image {
+  width: 980px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.content > * + * {
+  margin-top: 20px;
+}
+
+.content h2 {
+  font: var(--title-3);
+  letter-spacing: var(--title-5-letter-spacing);
+  color: var(--foreground);
+}
+
+.content h3 {
+  font: var(--title-3);
+  letter-spacing: var(--title-3-letter-spacing);
+  color: var(--foreground);
+}
+
+.content p,
+.content li {
+  font: var(--text-large);
+  letter-spacing: var(--text-large-letter-spacing);
+  color: var(--foreground);
+}
+
+.content ul,
+.content ol {
+  padding-left: 1.25rem;
+}
+
+.content img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.prose strong {
+  font-weight: var(--font-weight-semibold);
+  color: green;
+}
+
+.content hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: yellow;
+}
+
+
+@media (max-width: 672px) {
+  .prose{
+    width: 100%;
+  }
+}

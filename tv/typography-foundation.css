@@ -1,0 +1,14 @@
+:root {
+  /* Typography foundation
+     These are the low-level primitives used by the semantic type tokens. */
+
+  /* Font families */
+  --font-regular: var(--font-figtree);
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 510;
+  --font-weight-semibold: 590;
+  --font-weight-bold: 689;
+}

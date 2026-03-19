@@ -1,3 +1,6 @@
+@import "../tv/typography-foundation.css";
+@import "../tv/typography-semantic.css";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,7 +22,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-regular);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

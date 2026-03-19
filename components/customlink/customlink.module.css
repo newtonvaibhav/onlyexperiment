@@ -1,0 +1,9 @@
+.link{
+    text-decoration: underline;
+    text-decoration-color: blue;
+    transition: 100ms ease-out;
+}
+
+.link:hover{
+    text-decoration-color: yellow;
+}
