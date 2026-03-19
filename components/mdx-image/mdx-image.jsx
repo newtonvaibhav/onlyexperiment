@@ -33,14 +33,14 @@ export function MDXImage({
   style,
   ...props
 }) {
-  const extension = getExtension(src);
-  const supportsAutoBlur = extension ? BLUR_EXTENSIONS.has(extension) : false;
-  const resolvedPlaceholder =
-    placeholder === "blur" && (supportsAutoBlur || blurDataURL)
-      ? "blur"
-      : "empty";
-  const hasExplicitDimensions = Boolean(width) && Boolean(height);
-  const isStaticImport = typeof src === "object" && src !== null;
+  // const extension = getExtension(src);
+  // const supportsAutoBlur = extension ? BLUR_EXTENSIONS.has(extension) : false;
+  // const resolvedPlaceholder =
+  //   placeholder === "blur" && (supportsAutoBlur || blurDataURL)
+  //     ? "blur"
+  //     : "empty";
+  // const hasExplicitDimensions = Boolean(width) && Boolean(height);
+  // const isStaticImport = typeof src === "object" && src !== null;
 
   if (!isStaticImport && !hasExplicitDimensions) {
     return (
@@ -62,9 +62,8 @@ export function MDXImage({
       width={width}
       height={height}
       sizes={sizes}
-      blurDataURL={blurDataURL}
       className={className}
-      placeholder={resolvedPlaceholder}
+      placeholder="blur"
       style={{ width: "100%", height: "auto", ...style }}
       {...props}
     />
