@@ -32,28 +32,29 @@ export function MDXImage({
   className,
   style,
   ...props
-}) {
-  // const extension = getExtension(src);
-  // const supportsAutoBlur = extension ? BLUR_EXTENSIONS.has(extension) : false;
-  // const resolvedPlaceholder =
-  //   placeholder === "blur" && (supportsAutoBlur || blurDataURL)
-  //     ? "blur"
-  //     : "empty";
-  // const hasExplicitDimensions = Boolean(width) && Boolean(height);
-  // const isStaticImport = typeof src === "object" && src !== null;
+}) 
+{
+//   const extension = getExtension(src);
+//   const supportsAutoBlur = extension ? BLUR_EXTENSIONS.has(extension) : false;
+//   const resolvedPlaceholder =
+//     placeholder === "blur" && (supportsAutoBlur || blurDataURL)
+//       ? "blur"
+//       : "empty";
+//   const hasExplicitDimensions = Boolean(width) && Boolean(height);
+//   const isStaticImport = typeof src === "object" && src !== null;
 
-  if (!isStaticImport && !hasExplicitDimensions) {
-    return (
-      <img
-        src={src}
-        alt={alt}
-        title={title}
-        className={className}
-        style={{ width: "100%", height: "auto", ...style }}
-        {...props}
-      />
-    );
-  }
+//   if (!isStaticImport && !hasExplicitDimensions) {
+//     return (
+//       <img
+//         src={src}
+//         alt={alt}
+//         title={title}
+//         className={className}
+//         style={{ width: "100%", height: "auto", ...style }}
+//         {...props}
+//       />
+//     );
+//   }
 
   return (
     <Image
